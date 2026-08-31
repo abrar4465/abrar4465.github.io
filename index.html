@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abrar Mughal | Flutter Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient a1"></div><div class="ambient a2"></div><div class="grid"></div>
+
+<header class="nav glass">
+  <a class="brand" href="#home"><span>AM</span><b>Abrar<span>.</span></b></a>
+  <nav><a href="#work">Work</a><a href="#skills">Skills</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  <button class="nav-btn" id="profileBtn">Profile photo ↗</button>
+  <button class="hamb" id="hamb">☰</button>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <div class="status"><i></i> OPEN TO WORK · FLUTTER / MOBILE</div>
+    <h1>Building digital<br><em>experiences</em> with depth.</h1>
+    <p>I'm <strong>Abrar Mughal</strong>, a Software Engineering developer focused on Flutter, APIs, backend systems and practical AI-powered products.</p>
+    <div class="actions"><a class="btn solid" href="#work">See my work ↓</a><a class="btn glass" href="https://github.com/abrar4465" target="_blank">GitHub ↗</a></div>
+    <div class="stats"><div><b>Flutter</b><small>Primary stack</small></div><div><b>4+</b><small>Projects</small></div><div><b>Pakistan</b><small>Remote ready</small></div></div>
+  </div>
+  <div class="hero-visual">
+    <div class="photo-orbit"></div>
+    <div class="profile-3d glass" id="profileCard">
+      <div class="profile-image" id="profileImage"><span>AM</span><button id="profileUpload">＋</button></div>
+      <div class="profile-meta"><small>SOFTWARE ENGINEER</small><h3>Abrar Mughal</h3><p>Flutter · Full-Stack · AI</p></div>
+      <div class="profile-glow"></div>
+    </div>
+    <div class="float glass f1">✦ <b>Problem solver</b><small>Build · Learn · Improve</small></div>
+    <div class="float glass f2"><b>01</b><small>Selected<br>projects</small></div>
+  </div>
+</section>
+
+<section class="strip"><span>FLUTTER</span><i>✦</i><span>DART</span><i>✦</i><span>REST APIs</span><i>✦</i><span>FIREBASE</span><i>✦</i><span>MYSQL</span><i>✦</i><span>PYTHON</span><i>✦</i><span>GIT</span></section>
+
+<section class="section" id="work">
+  <div class="head"><div><small>01 / SELECTED WORK</small><h2>Things I've <em>built.</em></h2></div><p>Upload your project screenshots and turn your work into visual proof. Every card can link directly to your GitHub or live demo.</p></div>
+  <div class="project-grid" id="projectGrid"></div>
+  <button class="add-project glass" id="addBtn">＋ Add project with screenshot</button>
+</section>
+
+<section class="section" id="skills">
+  <div class="head"><div><small>02 / TOOLBOX</small><h2>My <em>stack.</em></h2></div><p>A focused toolkit for building cross-platform mobile products and connecting them to real systems.</p></div>
+  <div class="skills">
+    <article class="glass"><b>◈</b><h3>Mobile</h3><p>Flutter · Dart · Android Studio · Responsive UI · State Management</p></article>
+    <article class="glass"><b>⌘</b><h3>Backend</h3><p>REST APIs · Node.js · PHP · Firebase · Authentication · JSON</p></article>
+    <article class="glass"><b>▦</b><h3>Data & AI</h3><p>Python · Pandas · NumPy · Scikit-learn · Data Mining · AI APIs</p></article>
+    <article class="glass"><b>◉</b><h3>Database</h3><p>MySQL · SQLite · Hive · Firestore · Data Modeling</p></article>
+  </div>
+</section>
+
+<section class="section about" id="about">
+ <div class="about-box glass">
+   <small>03 / ABOUT ME</small>
+   <h2>From screens to <em>systems.</em></h2>
+   <p>I started by building interfaces and gradually moved deeper into APIs, databases, authentication, data and cloud services. I'm looking for an opportunity where I can contribute to a real team, learn from experienced engineers and ship useful products.</p>
+   <div class="tags"><span>Curious</span><span>Builder</span><span>Problem solver</span><span>Always learning</span></div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="contact-box">
+   <small>04 / CONTACT</small><h2>Let's build something<br><em>worth showing.</em></h2>
+   <p>Open to junior Flutter, mobile and software development opportunities.</p>
+   <div class="actions"><a class="btn solid" href="mailto:your-email@example.com">Email me ↗</a><a class="btn glass" href="https://www.linkedin.com/" target="_blank">LinkedIn ↗</a></div>
+ </div>
+</section>
+</main>
+<footer><span>© 2026 Abrar Mughal</span><span>Built with purpose.</span></footer>
+
+<dialog id="projectDialog">
+<form id="projectForm">
+<button type="button" class="close" id="closeDialog">×</button>
+<small>PROJECT MANAGER</small><h2>Add your project</h2>
+<p class="note">Choose one or more project screenshots. They are stored locally in this browser, so no external server is required for this demo.</p>
+<label>Project name<input id="pName" required placeholder="CyberGuard"></label>
+<label>Description<textarea id="pDesc" required placeholder="What did you build and why?"></textarea></label>
+<label>Technologies<input id="pTech" required placeholder="Flutter, Dart, Firebase"></label>
+<label>GitHub URL<input id="pGithub" placeholder="https://github.com/..."></label>
+<label>Live Demo URL<input id="pLive" placeholder="https://..."></label>
+<label>Project screenshot<input id="pImage" type="file" accept="image/*" multiple></label>
+<div id="preview" class="preview"></div>
+<div class="modal-actions"><button class="btn solid" type="submit">Save project</button><button class="btn glass" type="button" id="resetBtn">Reset added</button></div>
+</form>
+</dialog>
+
+<dialog id="profileDialog">
+<form id="profileForm">
+<button type="button" class="close" id="closeProfile">×</button>
+<small>PROFILE PHOTO</small><h2>Upload your picture</h2>
+<p class="note">Pick a professional photo. It will appear in your 3D profile card and stay saved in this browser.</p>
+<input id="profileFile" type="file" accept="image/*" required>
+<div class="profile-preview" id="profilePreview">AM</div>
+<div class="modal-actions"><button class="btn solid" type="submit">Use this photo</button><button class="btn glass" type="button" id="removeProfile">Remove photo</button></div>
+</form>
+</dialog>
+<script src="script.js"></script>
+</body>
+</html>
